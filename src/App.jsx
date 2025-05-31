@@ -4,7 +4,7 @@ import HomePage from "./HomePage";
 
 function App() {
   return (
-    <HomePage /> // Behold! The Cheese Lab!
+    <HomePage /> // The Cheese Lab!
   );
 }
 

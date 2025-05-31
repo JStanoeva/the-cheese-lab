@@ -5,19 +5,6 @@ Built to showcase how far you can push **React + Vite + Tailwind CSS** while sti
 
 ---
 
-## 🧩 Table of Contents
-
-1. [About](#about)
-2. [Tech Stack](#tech-stack)
-3. [Features](#features)
-4. [Local Setup](#local-setup)
-5. [Available Scripts](#available-scripts)
-6. [Project Structure](#project-structure)
-7. [Contributing](#contributing)
-8. [License](#license)
-
----
-
 ## 🧀 About
 
 **The Cheese Lab** is a demo portfolio site stuffed with:
@@ -35,7 +22,7 @@ It’s opinionated, over-the-top, and (mostly) production-ready—perfect for st
 
 | Purpose         | Library / Tool    | Notes                                       |
 | --------------- | ----------------- | ------------------------------------------- |
-| UI / Components | **React 18**      | Function components + hooks only            |
+| UI / Components | **React 19**      | Function components + hooks only            |
 | Build & HMR     | **Vite 5**        | Instant dev server, lightning-fast bundling |
 | Styling         | **Tailwind CSS**  | Utility-first CSS + some custom animations  |
 | Icons           | **lucide-react**  | Lightweight, tree-shakable SVG icons        |

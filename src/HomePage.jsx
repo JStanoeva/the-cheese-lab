@@ -1,4 +1,4 @@
-// src/The Cheese Lab - HomePage.jsx
+// The Cheese Lab - Home of Cheese Magic
 
 import React, { useState } from "react";
 import { Github, Twitter, Bot, Codesandbox, Linkedin } from "lucide-react";
