@@ -47,7 +47,7 @@ It’s opinionated, over-the-top, and (mostly) production-ready—perfect for st
 
 ```bash
 # 1 · Clone the repo
-git clone https://github.com/your-username/the-cheese-lab.git
+git clone https://github.com/JStanoeva/the-cheese-lab.git
 cd the-cheese-lab
 
 # 2 · Install dependencies
