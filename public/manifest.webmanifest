@@ -1,0 +1,16 @@
+{
+  "name": "The Cheese Lab",
+  "short_name": "Cheese Lab",
+  "description": "Playful one-page portfolio built with React and Tailwind CSS.",
+  "icons": [
+    {
+      "src": "/cheese.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#facc15",
+  "background_color": "#09090b"
+}
