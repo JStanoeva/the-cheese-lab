@@ -74,6 +74,7 @@ export default function HomePage() {
             {/* Hamburger */}
             <button
               aria-label="Toggle menu"
+              aria-expanded={mobileOpen}
               className="hamburger-btn relative w-6 h-5 focus:outline-none"
               onClick={() => setMobileOpen((o) => !o)}
             >
@@ -140,16 +141,16 @@ export default function HomePage() {
 
             <div className="mt-10 flex flex-wrap justify-center gap-6">
               {socialLinks.map(({ label, url, Icon }) => (
-                <a
+                <button
                   key={label}
-                  href={url}
-                  onClick={(e) => e.preventDefault()} // Prevent default for placeholder links
+                  type="button"
+                  onClick={(e) => e.preventDefault()} // Placeholder interaction
                   aria-label={`Follow on ${label}`}
                   className={`relative inline-flex items-center gap-2 text-sm uppercase tracking-widest text-zinc-400 hover:text-yellow-300 transition-colors duration-300 ${underline} ${textShadowHover}`}
                 >
                   <Icon size={16} />
                   {label}
-                </a>
+                </button>
               ))}
             </div>
           </section>
