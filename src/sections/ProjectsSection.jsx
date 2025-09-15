@@ -8,10 +8,11 @@ export default function ProjectsSection() {
       <SectionTitle>// PROJECTS</SectionTitle>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          <button
+          <a
             key={project.title}
-            type="button"
-            onClick={(event) => event.preventDefault()}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
             className={`relative group rounded-2xl p-6 flex flex-col bg-zinc-950/80 border border-zinc-800 hover:border-yellow-500 transform hover:-translate-y-1 transition-all duration-300 ease-out ${cardGlow}`}
           >
             <h4 className="text-xl font-bold mb-1 group-hover:text-yellow-300 transition-colors">
@@ -20,11 +21,11 @@ export default function ProjectsSection() {
             <p className="text-sm mb-2 text-zinc-400">{project.subtitle}</p>
             <p className="flex-grow text-zinc-300">{project.description}</p>
             <span
-              className={`relative inline-block mt-4 text-sm font-semibold text-zinc-300 hover:text-yellow-300 transition-colors duration-300 ${underline}`}
+              className={`relative inline-block mt-4 text-sm font-semibold text-zinc-300 group-hover:text-yellow-300 transition-colors duration-300 ${underline}`}
             >
               Explore →
             </span>
-          </button>
+          </a>
         ))}
       </div>
     </section>

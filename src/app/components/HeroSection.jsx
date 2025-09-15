@@ -21,16 +21,17 @@ export default function HeroSection() {
 
       <div className="mt-10 flex flex-wrap justify-center gap-6">
         {socialLinks.map(({ label, url, Icon }) => (
-          <button
+          <a
             key={label}
-            type="button"
-            onClick={(event) => event.preventDefault()} // Placeholder interaction
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label={`Follow on ${label}`}
             className={`relative inline-flex items-center gap-2 text-sm uppercase tracking-widest text-zinc-400 hover:text-yellow-300 transition-colors duration-300 ${underline} ${textShadowHover}`}
           >
             <Icon size={16} />
             {label}
-          </button>
+          </a>
         ))}
       </div>
     </section>
