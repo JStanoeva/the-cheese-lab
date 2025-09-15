@@ -14,8 +14,8 @@ The Cheese Lab is a static landing page built in React + Tailwind CSS.
 |-- AGENTS.md
 |-- dist/
 |   |-- assets/
-|   |   |-- index-BROhNVu8.css
-|   |   `-- index-RdQx56dV.js
+|   |   |-- index-APgCHuak.css
+|   |   `-- index-D4OJ6n4I.js
 |   |-- cheese.svg
 |   |-- index.html
 |   `-- manifest.webmanifest
@@ -28,17 +28,33 @@ The Cheese Lab is a static landing page built in React + Tailwind CSS.
 |   `-- manifest.webmanifest
 |-- README.md
 |-- src/
-|   |-- App.jsx
+|   |-- app/
+|   |   |-- App.jsx
+|   |   `-- components/
+|   |       |-- BackgroundLayers.jsx
+|   |       |-- HeroSection.jsx
+|   |       |-- SiteFooter.jsx
+|   |       `-- SiteHeader.jsx
 |   |-- components/
-|   |   |-- FunFactsSection.jsx
-|   |   |-- PressSection.jsx
-|   |   |-- ProjectsSection.jsx
-|   |   |-- SectionTitle.jsx
-|   |   |-- TestimonialsSection.jsx
-|   |   `-- VarietySection.jsx
-|   |-- data.js
+|   |   `-- SectionTitle.jsx
+|   |-- content/
+|   |   |-- cheeses.js
+|   |   |-- funFacts.js
+|   |   |-- index.js
+|   |   |-- navigation.js
+|   |   |-- press.js
+|   |   |-- projects.js
+|   |   |-- social.js
+|   |   |-- styles.js
+|   |   `-- testimonials.js
 |   |-- index.css
-|   `-- main.jsx
+|   |-- main.jsx
+|   `-- sections/
+|       |-- FunFactsSection.jsx
+|       |-- PressSection.jsx
+|       |-- ProjectsSection.jsx
+|       |-- TestimonialsSection.jsx
+|       `-- VarietySection.jsx
 `-- vite.config.js
 ```
 
