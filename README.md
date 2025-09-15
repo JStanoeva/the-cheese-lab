@@ -1,6 +1,6 @@
-# 🧀 THE CHEESE LAB
+﻿# 🧀 THE CHEESE LAB
 
-A playful one-page portfolio that serves up projects, fun facts, and social links with more flair than a five-year-aged Gruyère.  
+A playful one-page portfolio that serves up projects, fun facts, and social links with more flair than a five-year-aged Gruyère.
 Built to showcase how far you can push **React + Vite + Tailwind CSS** while still keeping the bundle as light and airy as whipped ricotta.
 
 ---
@@ -23,7 +23,7 @@ It’s opinionated, over-the-top, and (mostly) production-ready—perfect for st
 | Purpose         | Library / Tool    | Notes                                       |
 | --------------- | ----------------- | ------------------------------------------- |
 | UI / Components | **React 19**      | Function components + hooks only            |
-| Build & HMR     | **Vite 5**        | Instant dev server, lightning-fast bundling |
+| Build & HMR     | **Vite 6**        | Instant dev server, lightning-fast bundling |
 | Styling         | **Tailwind CSS**  | Utility-first CSS + some custom animations  |
 | Icons           | **lucide-react**  | Lightweight, tree-shakable SVG icons        |
 | Animations      | **CSS keyframes** | Glitch, wave, blinkCheese                   |
@@ -42,7 +42,7 @@ It’s opinionated, over-the-top, and (mostly) production-ready—perfect for st
 
 ## 🧪 Local Setup
 
-> Recommended: Node 18+ / npm 10+  
+> Recommended: Node 18+ / npm 10+
 > (Supports `yarn` or `pnpm` too)
 
 ```bash
@@ -76,9 +76,8 @@ npm run preview   # Local preview of the dist folder
 | `build`    | Bundles the project for production    |
 | `preview`  | Serves the build output locally       |
 | `lint`\*   | Lints the code with ESLint (optional) |
-| `format`\* | Formats code with Prettier (optional) |
 
-_\*You can enable these by adding config files and dependencies._
+_\*You can enable additional tooling (e.g., prettier) if you add the configs and scripts._
 
 ---
 
@@ -86,14 +85,38 @@ _\*You can enable these by adding config files and dependencies._
 
 ```
 .
-├── public/                 # Static files (e.g. icons, images)
-└── src/
-    ├── HomePage.jsx        # Main app file
-    ├── main.jsx            # React root + Tailwind import
-    └── index.css           # Tailwind directives + custom CSS
+├── public/                     # Static files served as-is
+├── src/
+│   ├── app/
+│   │   ├── App.jsx             # Root layout shell
+│   │   └── components/         # Layout-specific building blocks
+│   │       ├── BackgroundLayers.jsx
+│   │       ├── HeroSection.jsx
+│   │       ├── SiteFooter.jsx
+│   │       └── SiteHeader.jsx
+│   ├── components/
+│   │   └── SectionTitle.jsx    # Shared UI element
+│   ├── content/                # Structured data + constants
+│   │   ├── cheeses.js
+│   │   ├── funFacts.js
+│   │   ├── index.js
+│   │   ├── navigation.js
+│   │   ├── press.js
+│   │   ├── projects.js
+│   │   ├── social.js
+│   │   ├── styles.js
+│   │   └── testimonials.js
+│   ├── index.css               # Tailwind directives + custom CSS
+│   ├── main.jsx                # React entry point
+│   └── sections/               # Feature sections rendered on the page
+│       ├── FunFactsSection.jsx
+│       ├── PressSection.jsx
+│       ├── ProjectsSection.jsx
+│       ├── TestimonialsSection.jsx
+│       └── VarietySection.jsx
+├── AGENTS.md                   # Repository guidance for AI contributors
+└── vite.config.js              # Vite configuration
 ```
-
-Currently, everything is in `HomePage.jsx` for simplicity. Feel free to split into components as the project grows.
 
 ---
 
@@ -112,9 +135,9 @@ Just keep your cheese puns sharp and your PRs clean. 🧼
 
 ## 🪪 License
 
-MIT — because good cheese should be shared freely.
+MIT — because good cheese should be shared freely. See [`LICENSE`](./LICENSE).
 
 ---
 
-> Made with 🧀 by **Tora the Cheesesmith**  
+> Made with 🧀 by **Tora the Cheesesmith**
 > Because cheddar-driven development > test-driven development
