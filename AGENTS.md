@@ -1,4 +1,4 @@
-﻿# Agent Guidelines for Stellarmelt
+﻿# Agent Guidelines
 
 This document defines how AI agents should work in this repository. It keeps changes aligned with the project's conventions.
 
